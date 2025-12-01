@@ -1,10 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First GitHub Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AlbumTones</title>
+
+<style>
+    /* ----- GLOBAL STYLES ----- */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, sans-serif;
+        background: #121212;
+        color: #e8e8e8;
+        line-height: 1.6;
+    }
+
+    a {
+        color: #64aaff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    /* ----- HEADER ----- */
+    header {
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2.6rem;
+        margin: 0;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+    }
+
+    /* ----- IMAGE GALLERY ----- */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    /* ----- VIDEO ----- */
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 2rem 0;
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    /* ----- CONTACT SECTION ----- */
+    .contact {
+        margin-top: 3rem;
+        padding: 2rem;
+        background: #1c1c1c;
+        border-radius: 10px;
+    }
+
+    .contact h2 {
+        margin-top: 0;
+    }
+
+    /* ----- FOOTER ----- */
+    footer {
+        text-align: center;
+        margin-top: 3rem;
+        opacity: 0.6;
+        font-size: 0.9rem;
+        padding-bottom: 2rem;
+    }
+</style>
 </head>
+
 <body>
-    <h1>Hello from GitHub Pages!</h1>
-    <p>This is my simple website.</p>
+
+<header>
+    <h1>Your Name</h1>
+    <p>Short subtitle or description here</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Write a few sentences about who you are, what you do, and what this portfolio is about.
+        </p>
+    </section>
+
+    <section>
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/400x300" alt="Placeholder image">
+            <img src="https://via.placeholder.com/400x300" alt="Placeholder image">
+            <img src="https://via.placeholder.com/400x300" alt="Placeholder image">
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Video</h2>
+        <div class="video-wrapper">
+            <!-- Replace SHORT_ID with YouTube Shorts or video ID -->
+            <iframe src="https://www.youtube.com/embed/k_4U8b7IqLo" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+        <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
+        <p>GitHub: <a href="#">Your GitHub</a></p>
+    </section>
+
+</div>
+
+<footer>
+    Copyright © 2025 — Your Name
+</footer>
+
 </body>
 </html>
